@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
-
+    private String nonse;
     Context context;
     ArrayList<Imagemodel> wallpaperlist;
 
@@ -42,4 +42,10 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             super(itemView);
         }
     }
+
+    //aaaaaaaaaaaaaaaa
+
+
+
+
 }
