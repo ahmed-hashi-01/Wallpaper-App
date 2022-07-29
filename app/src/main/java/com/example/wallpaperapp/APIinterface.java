@@ -11,7 +11,7 @@ public interface APIinterface {
     String BaseUrl = "https://api.pexels.com/v1/";
 
     @Headers("Authorization: "+ API)
-    @GET("currated")
+    @GET("curated")
     Call<SearchModel> getImage(
             @Query("page") int page ,
             @Query("per_page") int per_page
@@ -19,9 +19,9 @@ public interface APIinterface {
 
     @Headers("Authorization: "+ API)
     @GET("search")
-    Call<SearchModel> getImage(
-            @Query("query") String query ,
-            @Query("page") int page ,
+    Call<SearchModel> getSearchImage(
+            @Query("query") String query,
+            @Query ("page") int page ,
             @Query("per_page") int per_page
     );
 }
